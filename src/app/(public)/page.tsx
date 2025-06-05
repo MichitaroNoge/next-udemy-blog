@@ -21,7 +21,7 @@ export default async function PostPage({
     : ((await getPosts()) as Post[]);
 
   return (
-    <div className="contaier mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post: Post) => (
           <PostCard key={post.id} post={post} />
